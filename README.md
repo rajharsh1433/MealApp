@@ -30,7 +30,7 @@ Demo
 Check out the live demo of the application at https://imsahadeb.github.io/The-Meal-App-Coding-Ninjas/
 
 Authors
-@imsahadeb
+@rajharsh1433
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
