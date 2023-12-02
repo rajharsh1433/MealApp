@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: linear-gradient(135deg, #153677,#4e085f);
+
+   
+
+
+}
+.container{
+    background: linear-gradient(135deg, #153677,#4e085f);
+    padding: 10px;
+}
+/*--------nav bar and hamburger-icon---------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .hamburger-menu {
+    display: none; /* Hide by default on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .menu {
+      display: none; /* Hide by default on smaller screens */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust as needed based on your design */
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .menu.show {
+      display: flex;
+    }
+  
+    .menu li {
+      margin: 15px 0;
+    }
+  }
+  /*-------------Search bar -----------------*/
+  .todo-app{
+    width: 40%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+input{
+    flex: 1;
+    border:none;
+    outline:none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+.search-button{
+    border: none;
+    outline:none;
+    padding:16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.header img{
+    width: 30px;
+    height: 30px;
+}
+.header{
+    color: #fff;
+    margin-left: 470px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+/*-------------heart-button---------------------*/
+.heart-button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .heart-button::before,
+  .heart-button::after {
+    content: "";
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: red;
+  }
+  
+  .heart-button::before {
+    left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  }
+  .heart-button::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  .heart-button.liked {
+    background-color: #ff7b7b; /* Change the color for the liked state */
+  }
+  /*---------------------------------------------*/
+  .Search-result{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+    padding: 0 10px;
+  }
+  .Search-result:has(.item-card){
+    height: auto;
+  }
+  .item-card{
+    margin: 5px;
+    height: 350px;
+    min-width: 220px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(234, 39%, 85%);
+    align-items: center;
+    border-radius: 20px;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  }
+  .inner-area{
+    height: auto;
+  }
+  .item-card img{
+    margin-top: 20px;
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+  }
+  #description{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .flex-items{
+    display: flex;
+    margin-top: 20px;
+  }
+  .view-receipe{
+    justify-content:flex-start;
+    margin-left: -20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 10px;
+  }
+  .like-button{
+    justify-content: flex-end;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    margin-left: 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 10px;
+  }
+
+  /*-----------detail-item-card-----------------*/
+  .item-card-detail{
+    width: auto;
+    height: fit-content;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(234, 39%, 85%);
+    border-radius: 20px;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  }
+  .item-card-detail img{
+    justify-content: flex-start;
+    height: 300px;
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+.info-block{
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+
+.food-not-found{
+  justify-content: center;
+  color: #fff;
+
+}
+#fav-container{
+  width: 100%;
+  min-height: 100vh ;
+}
+
+
+
+.no-result{
+  color: #fff;
+  text-align: center;
+  margin: 15px;
+}
+.container-fav{
+  background: linear-gradient(135deg, #153677,#4e085f);
+  padding: 10px;
+}
+#description{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: small;
+}
+
+
+
+
+
+
+
+  
