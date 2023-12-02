@@ -27,7 +27,7 @@ HTML
 CSS
 JavaScript
 Demo
-Check out the live demo of the application at https://imsahadeb.github.io/The-Meal-App-Coding-Ninjas/
+Check out the live demo of the application at  https://rajharsh1433.github.io/MealApp/
 
 Authors
 @rajharsh1433
@@ -35,4 +35,4 @@ License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 Acknowledgments
-The Meal DB API (https://www.themealdb.com
+The Meal DB API (https://www.themealdb.com)
